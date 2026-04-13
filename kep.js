@@ -5,8 +5,6 @@ export default class Kep {
         this.leiras = obj.leiras;
         this.index = index;
         this.szuloElem = szuloElem;
-        this.leiras1=obj.leiras1
-        this.leiras2=obj.leiras2
         this.megjelenit();
     }
 
@@ -16,8 +14,6 @@ export default class Kep {
                 <img src="${this.foto}" alt="${this.cim}">
                 <h3>${this.cim}</h3>
                 <p>${this.leiras}</p>
-                <p>${this.leiras1}</p>
-                <p>${this.leiras2}</p>
             </div>
         `;
 
