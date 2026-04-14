@@ -1,8 +1,6 @@
 export default class Kep {
     constructor(obj, szuloElem, index) {
         this.foto = obj.foto;
-        this.cim = obj.cim;
-        this.leiras = obj.leiras;
         this.index = index;
         this.szuloElem = szuloElem;
         this.megjelenit();
@@ -11,14 +9,11 @@ export default class Kep {
     megjelenit() {
         this.szuloElem.innerHTML += `
             <div class="kep">
-                <img src="${this.foto}" alt="${this.cim}">
-                <h3>${this.cim}</h3>
-                <p>${this.leiras}</p>
+                <img src="${this.foto}" alt="${this.cim}"
             </div>
         `;
 
         this.kepElem = this.szuloElem.querySelectorAll(".kep")[this.index];
-
         this.esemeny();
     }
 
